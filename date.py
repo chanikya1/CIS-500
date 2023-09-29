@@ -89,7 +89,6 @@ def test_days_elapsed3(self):
 def test_day_of_week1(self):
     self.assertEqual("Monday", my_date.day_of_week(1753, 1, 1))
 
-
     #
     # to_str
     #
