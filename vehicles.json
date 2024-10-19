@@ -1,69 +1,68 @@
 {
-    "brands": [
-      {
-        "region": "India",
-        "name": "Tata",
-        "models": [
-          {
-            "modelName": "Tata Nexon",
-            "year": "2023",
-            "price": 15000
-          },
-          {
-            "modelName": "Tata Harrier",
-            "year": "2022",
-            "price": 25000
-          }
-        ]
-      },
-      {
-        "region": "India",
-        "name": "Mahindra",
-        "models": [
-          {
-            "modelName": "Mahindra XUV700",
-            "year": "2023",
-            "price": 28000
-          },
-          {
-            "modelName": "Mahindra Thar",
-            "year": "2022",
-            "price": 21000
-          }
-        ]
-      },
-      {
-        "region": "USA",
-        "name": "Ford",
-        "models": [
-          {
-            "modelName": "Ford Escape",
-            "year": "2023",
-            "price": 24000
-          },
-          {
-            "modelName": "Ford Explorer",
-            "year": "2022",
-            "price": 32000
-          }
-        ]
-      },
-      {
-        "region": "USA",
-        "name": "Chevrolet",
-        "models": [
-          {
-            "modelName": "Chevrolet Tahoe",
-            "year": "2023",
-            "price": 49000
-          },
-          {
-            "modelName": "Chevrolet Malibu",
-            "year": "2022",
-            "price": 23000
-          }
-        ]
-      }
-    ]
-  }
-  
+  "brands": [
+    {
+      "region": "India",
+      "name": "Tata",
+      "models": [
+        {
+          "modelName": "Tata Nexon",
+          "year": 2021,
+          "price": 14000
+        },
+        {
+          "modelName": "Tata Harrier",
+          "year": 2022,
+          "price": 21000
+        }
+      ]
+    },
+    {
+      "region": "India",
+      "name": "Mahindra",
+      "models": [
+        {
+          "modelName": "Mahindra XUV700",
+          "year": 2022,
+          "price": 22000
+        },
+        {
+          "modelName": "Mahindra Thar",
+          "year": 2021,
+          "price": 19000
+        }
+      ]
+    },
+    {
+      "region": "USA",
+      "name": "Ford",
+      "models": [
+        {
+          "modelName": "Ford Mustang",
+          "year": 2021,
+          "price": 27000
+        },
+        {
+          "modelName": "Ford F-150",
+          "year": 2022,
+          "price": 35000
+        }
+      ]
+    },
+    {
+      "region": "USA",
+      "name": "Chevrolet",
+      "models": [
+        {
+          "modelName": "Chevrolet Silverado",
+          "year": 2022,
+          "price": 32000
+        },
+        {
+          "modelName": "Chevrolet Camaro",
+          "year": 2021,
+          "price": 25000
+        }
+      ]
+    }
+  ]
+}

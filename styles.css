@@ -1,36 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  .navigation {
-    margin-top: 50px;
-  }
-  
-  .region-btn {
-    margin: 10px;
-  }
-  
-  .region-link, .compare-link {
-    background-color: #ff9800;
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
-  }
-  
-  .region-link:hover, .compare-link:hover {
-    background-color: #e68900;
-  }
-  
-  select {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6; /* Improved line height */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px; /* Added space below h1 */
+}
+
+.navigation {
+  margin-top: 30px; /* Space above navigation */
+  margin-bottom: 30px; /* Space below navigation */
+}
+
+.region-btn, .comparison-btn {
+  margin: 10px 0; /* Space around each button */
+}
+
+.region-link, .compare-link, .back-link {
+  display: inline-block; /* Align buttons horizontally */
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.region-link:hover, .compare-link:hover, .back-link:hover {
+  background-color: #e68900; /* Darker shade on hover */
+}
+
+select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px; /* Fixed width for consistency */
+}
+
+#indian-cars, #usa-cars {
+  margin-top: 20px; /* Added space above the car list */
+}
+
+h2 {
+  margin-top: 20px; /* Space above each brand */
+  color: #555; /* Slightly lighter color for brand names */
+}
+
+.back-link {
+  margin-top: 30px; /* Space above the back link */
+}

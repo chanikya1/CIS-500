@@ -29,6 +29,10 @@ function loadIndianCars() {
       indianCarsDiv.appendChild(modelInfo);
     });
   });
+
+  if (indianBrands.length === 0) {
+    indianCarsDiv.innerHTML = '<p>No Indian cars available.</p>';
+  }
 }
 
 // Load USA cars into the USA cars page
@@ -47,6 +51,10 @@ function loadUSACars() {
       usaCarsDiv.appendChild(modelInfo);
     });
   });
+
+  if (usaBrands.length === 0) {
+    usaCarsDiv.innerHTML = '<p>No USA cars available.</p>';
+  }
 }
 
 // Load models into the dropdowns for comparison
