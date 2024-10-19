@@ -34,7 +34,61 @@
     <script>
         const brandsData = {
             "brands": [
-                // Paste the JSON data here or fetch from data.json
+                {
+                    "region": "USA",
+                    "name": "Ford",
+                    "models": [
+                        { "modelName": "Mustang", "year": 2024, "price": 55000 },
+                        { "modelName": "F-150", "year": 2023, "price": 45000 },
+                        { "modelName": "Bronco", "year": 2024, "price": 40000 },
+                        { "modelName": "Explorer", "year": 2023, "price": 35000 },
+                        { "modelName": "Ranger", "year": 2024, "price": 32000 }
+                    ]
+                },
+                {
+                    "region": "USA",
+                    "name": "Chevrolet",
+                    "models": [
+                        { "modelName": "Silverado", "year": 2024, "price": 45000 },
+                        { "modelName": "Tahoe", "year": 2023, "price": 60000 },
+                        { "modelName": "Camaro", "year": 2024, "price": 42000 },
+                        { "modelName": "Suburban", "year": 2023, "price": 70000 },
+                        { "modelName": "Traverse", "year": 2024, "price": 48000 }
+                    ]
+                },
+                {
+                    "region": "USA",
+                    "name": "Tesla",
+                    "models": [
+                        { "modelName": "Model S", "year": 2024, "price": 90000 },
+                        { "modelName": "Model 3", "year": 2023, "price": 55000 },
+                        { "modelName": "Model X", "year": 2024, "price": 95000 },
+                        { "modelName": "Model Y", "year": 2023, "price": 60000 },
+                        { "modelName": "Cybertruck", "year": 2024, "price": 70000 }
+                    ]
+                },
+                {
+                    "region": "USA",
+                    "name": "Dodge",
+                    "models": [
+                        { "modelName": "Charger", "year": 2024, "price": 40000 },
+                        { "modelName": "Challenger", "year": 2023, "price": 38000 },
+                        { "modelName": "Durango", "year": 2024, "price": 45000 },
+                        { "modelName": "Ram 1500", "year": 2023, "price": 50000 },
+                        { "modelName": "Viper", "year": 2024, "price": 90000 }
+                    ]
+                },
+                {
+                    "region": "USA",
+                    "name": "Jeep",
+                    "models": [
+                        { "modelName": "Wrangler", "year": 2024, "price": 45000 },
+                        { "modelName": "Cherokee", "year": 2023, "price": 40000 },
+                        { "modelName": "Gladiator", "year": 2024, "price": 48000 },
+                        { "modelName": "Compass", "year": 2023, "price": 32000 },
+                        { "modelName": "Grand Cherokee", "year": 2024, "price": 50000 }
+                    ]
+                }
             ]
         };
 
@@ -52,8 +106,8 @@
             });
         }
 
-        // Call the function to display brands for USA or USA
-        displayBrands("USA"); // Change to "USA" for the USA page
+        // Call the function to display brands for USA
+        displayBrands("USA");
     </script>
 </body>
 </html>
