@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Cars - CarChoice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Compare Indian and USA Cars</h1>
+  <div>
+    <label for="india-model">Select Indian Model:</label>
+    <select id="india-model"></select>
+  </div>
+  <div>
+    <label for="usa-model">Select USA Model:</label>
+    <select id="usa-model"></select>
+  </div>
+  <button id="compare-btn">Compare</button>
+
+  <div id="comparison-result" style="display: none;">
+    <h2>Comparison Result</h2>
+    <p id="result-text"></p>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    loadModels('India');
+    loadModels('USA');
+
+    document.getElementById('compare-btn').onclick = function() {
+      compareModels();
+    };
+
+    function compareModels() {
+      const indiaModel = document.getElementById('india-model').value;
+      const usaModel = document.getElementById('usa-model').value;
+
+      if (indiaModel && usaModel) {
+        const indiaData = getModelData('India', indiaModel);
+        const usaData = getModelData('USA', usaModel);
+
+        const resultText = `Comparing ${indiaData.modelName} (${indiaData.year}, $${indiaData.price}) with ${usaData.modelName} (${usaData.year}, $${usaData.price}).`;
+        document.getElementById('result-text').innerText = resultText;
+        document.getElementById('comparison-result').style.display = 'block';
+      } else {
+        alert('Please select both models to compare.');
+      }
+    }
+  </script>
+</body>
+</html>
