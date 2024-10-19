@@ -2,66 +2,112 @@
   "brands": [
     {
       "region": "India",
-      "name": "Tata",
+      "name": "Tata Motors",
       "models": [
-        {
-          "modelName": "Tata Nexon",
-          "year": 2021,
-          "price": 14000
-        },
-        {
-          "modelName": "Tata Harrier",
-          "year": 2022,
-          "price": 21000
-        }
+        { "modelName": "Nexon", "year": 2024, "price": 14000 },
+        { "modelName": "Harrier", "year": 2023, "price": 18000 },
+        { "modelName": "Altroz", "year": 2024, "price": 12000 },
+        { "modelName": "Safari", "year": 2023, "price": 21000 },
+        { "modelName": "Punch", "year": 2024, "price": 10000 }
       ]
     },
     {
       "region": "India",
       "name": "Mahindra",
       "models": [
-        {
-          "modelName": "Mahindra XUV700",
-          "year": 2022,
-          "price": 22000
-        },
-        {
-          "modelName": "Mahindra Thar",
-          "year": 2021,
-          "price": 19000
-        }
+        { "modelName": "XUV700", "year": 2024, "price": 22000 },
+        { "modelName": "Thar", "year": 2023, "price": 19000 },
+        { "modelName": "Scorpio-N", "year": 2024, "price": 20000 },
+        { "modelName": "Bolero", "year": 2023, "price": 13000 },
+        { "modelName": "Marazzo", "year": 2024, "price": 17000 }
+      ]
+    },
+    {
+      "region": "India",
+      "name": "Maruti Suzuki",
+      "models": [
+        { "modelName": "Swift", "year": 2024, "price": 9000 },
+        { "modelName": "Baleno", "year": 2023, "price": 9500 },
+        { "modelName": "Ertiga", "year": 2024, "price": 14000 },
+        { "modelName": "Brezza", "year": 2023, "price": 11000 },
+        { "modelName": "Dzire", "year": 2024, "price": 8000 }
+      ]
+    },
+    {
+      "region": "India",
+      "name": "Hyundai India",
+      "models": [
+        { "modelName": "Creta", "year": 2024, "price": 17000 },
+        { "modelName": "Venue", "year": 2023, "price": 13000 },
+        { "modelName": "i20", "year": 2024, "price": 10000 },
+        { "modelName": "Verna", "year": 2023, "price": 16000 },
+        { "modelName": "Tucson", "year": 2024, "price": 25000 }
+      ]
+    },
+    {
+      "region": "India",
+      "name": "Kia India",
+      "models": [
+        { "modelName": "Seltos", "year": 2024, "price": 18000 },
+        { "modelName": "Sonet", "year": 2023, "price": 13000 },
+        { "modelName": "Carnival", "year": 2024, "price": 25000 },
+        { "modelName": "EV6", "year": 2023, "price": 32000 },
+        { "modelName": "Carens", "year": 2024, "price": 20000 }
       ]
     },
     {
       "region": "USA",
       "name": "Ford",
       "models": [
-        {
-          "modelName": "Ford Mustang",
-          "year": 2021,
-          "price": 27000
-        },
-        {
-          "modelName": "Ford F-150",
-          "year": 2022,
-          "price": 35000
-        }
+        { "modelName": "Mustang", "year": 2024, "price": 55000 },
+        { "modelName": "F-150", "year": 2023, "price": 45000 },
+        { "modelName": "Bronco", "year": 2024, "price": 40000 },
+        { "modelName": "Explorer", "year": 2023, "price": 35000 },
+        { "modelName": "Ranger", "year": 2024, "price": 32000 }
       ]
     },
     {
       "region": "USA",
       "name": "Chevrolet",
       "models": [
-        {
-          "modelName": "Chevrolet Silverado",
-          "year": 2022,
-          "price": 32000
-        },
-        {
-          "modelName": "Chevrolet Camaro",
-          "year": 2021,
-          "price": 25000
-        }
+        { "modelName": "Silverado", "year": 2024, "price": 45000 },
+        { "modelName": "Tahoe", "year": 2023, "price": 60000 },
+        { "modelName": "Camaro", "year": 2024, "price": 42000 },
+        { "modelName": "Suburban", "year": 2023, "price": 70000 },
+        { "modelName": "Traverse", "year": 2024, "price": 48000 }
+      ]
+    },
+    {
+      "region": "USA",
+      "name": "Tesla",
+      "models": [
+        { "modelName": "Model S", "year": 2024, "price": 90000 },
+        { "modelName": "Model 3", "year": 2023, "price": 55000 },
+        { "modelName": "Model X", "year": 2024, "price": 95000 },
+        { "modelName": "Model Y", "year": 2023, "price": 60000 },
+        { "modelName": "Cybertruck", "year": 2024, "price": 70000 }
+      ]
+    },
+    {
+      "region": "USA",
+      "name": "Dodge",
+      "models": [
+        { "modelName": "Charger", "year": 2024, "price": 40000 },
+        { "modelName": "Challenger", "year": 2023, "price": 38000 },
+        { "modelName": "Durango", "year": 2024, "price": 45000 },
+        { "modelName": "Ram 1500", "year": 2023, "price": 50000 },
+        { "modelName": "Viper", "year": 2024, "price": 90000 }
+      ]
+    },
+    {
+      "region": "USA",
+      "name": "Jeep",
+      "models": [
+        { "modelName": "Wrangler", "year": 2024, "price": 45000 },
+        { "modelName": "Cherokee", "year": 2023, "price": 40000 },
+        { "modelName": "Gladiator", "year": 2024, "price": 48000 },
+        { "modelName": "Compass", "year": 2023, "price": 32000 },
+        { "modelName": "Grand Cherokee", "year": 2024, "price": 50000 }
       ]
     }
   ]
