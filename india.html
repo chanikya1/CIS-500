@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indian Cars - CarChoice</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+        .brand {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin: 0 0 10px;
+        }
+        .model {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Indian Cars</h1>
-  <div id="indian-cars"></div>
-  <a href="index.html" class="back-link">Back to Home</a>
+    <h1>Top Car Brands in India</h1>
+    <div id="brands-container"></div>
+    <script>
+        const brandsData = {
+            "brands": [
+                // Paste the JSON data here or fetch from data.json
+            ]
+        };
 
-  <script src="app.js"></script>
+        function displayBrands(region) {
+            const container = document.getElementById('brands-container');
+            const filteredBrands = brandsData.brands.filter(brand => brand.region === region);
+            filteredBrands.forEach(brand => {
+                const brandDiv = document.createElement('div');
+                brandDiv.classList.add('brand');
+                brandDiv.innerHTML = `<h2>${brand.name}</h2>`;
+                brand.models.forEach(model => {
+                    brandDiv.innerHTML += `<div class="model">${model.modelName} (${model.year}) - $${model.price}</div>`;
+                });
+                container.appendChild(brandDiv);
+            });
+        }
+
+        // Call the function to display brands for India or USA
+        displayBrands("India"); // Change to "USA" for the USA page
+    </script>
 </body>
 </html>
