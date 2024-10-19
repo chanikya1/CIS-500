@@ -1,113 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Brands in USA</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-            color: #333;
-            padding: 20px;
-        }
-        .brand {
-            margin-bottom: 30px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h2 {
-            margin: 0 0 10px;
-        }
-        .model {
-            margin-left: 20px;
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USA Cars - CarChoice</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Top Car Brands in USA</h1>
-    <div id="brands-container"></div>
-    <script>
-        const brandsData = {
-            "brands": [
-                {
-                    "region": "USA",
-                    "name": "Ford",
-                    "models": [
-                        { "modelName": "Mustang", "year": 2024, "price": 55000 },
-                        { "modelName": "F-150", "year": 2023, "price": 45000 },
-                        { "modelName": "Bronco", "year": 2024, "price": 40000 },
-                        { "modelName": "Explorer", "year": 2023, "price": 35000 },
-                        { "modelName": "Ranger", "year": 2024, "price": 32000 }
-                    ]
-                },
-                {
-                    "region": "USA",
-                    "name": "Chevrolet",
-                    "models": [
-                        { "modelName": "Silverado", "year": 2024, "price": 45000 },
-                        { "modelName": "Tahoe", "year": 2023, "price": 60000 },
-                        { "modelName": "Camaro", "year": 2024, "price": 42000 },
-                        { "modelName": "Suburban", "year": 2023, "price": 70000 },
-                        { "modelName": "Traverse", "year": 2024, "price": 48000 }
-                    ]
-                },
-                {
-                    "region": "USA",
-                    "name": "Tesla",
-                    "models": [
-                        { "modelName": "Model S", "year": 2024, "price": 90000 },
-                        { "modelName": "Model 3", "year": 2023, "price": 55000 },
-                        { "modelName": "Model X", "year": 2024, "price": 95000 },
-                        { "modelName": "Model Y", "year": 2023, "price": 60000 },
-                        { "modelName": "Cybertruck", "year": 2024, "price": 70000 }
-                    ]
-                },
-                {
-                    "region": "USA",
-                    "name": "Dodge",
-                    "models": [
-                        { "modelName": "Charger", "year": 2024, "price": 40000 },
-                        { "modelName": "Challenger", "year": 2023, "price": 38000 },
-                        { "modelName": "Durango", "year": 2024, "price": 45000 },
-                        { "modelName": "Ram 1500", "year": 2023, "price": 50000 },
-                        { "modelName": "Viper", "year": 2024, "price": 90000 }
-                    ]
-                },
-                {
-                    "region": "USA",
-                    "name": "Jeep",
-                    "models": [
-                        { "modelName": "Wrangler", "year": 2024, "price": 45000 },
-                        { "modelName": "Cherokee", "year": 2023, "price": 40000 },
-                        { "modelName": "Gladiator", "year": 2024, "price": 48000 },
-                        { "modelName": "Compass", "year": 2023, "price": 32000 },
-                        { "modelName": "Grand Cherokee", "year": 2024, "price": 50000 }
-                    ]
-                }
-            ]
-        };
+  <h1>USA Cars</h1>
+  <div id="usa-cars"></div>
+  <a href="index.html" class="back-link">Back to Home</a>
 
-        function displayBrands(region) {
-            const container = document.getElementById('brands-container');
-            const filteredBrands = brandsData.brands.filter(brand => brand.region === region);
-            filteredBrands.forEach(brand => {
-                const brandDiv = document.createElement('div');
-                brandDiv.classList.add('brand');
-                brandDiv.innerHTML = `<h2>${brand.name}</h2>`;
-                brand.models.forEach(model => {
-                    brandDiv.innerHTML += `<div class="model">${model.modelName} (${model.year}) - $${model.price}</div>`;
-                });
-                container.appendChild(brandDiv);
-            });
-        }
-
-        // Call the function to display brands for USA
-        displayBrands("USA");
-    </script>
+  <script src="app.js"></script>
 </body>
 </html>
